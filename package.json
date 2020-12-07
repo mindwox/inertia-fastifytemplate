@@ -1,0 +1,37 @@
+{
+    "name": "fastify-inertia",
+    "version": "1.0.0",
+    "description": "building an app using fasyify and inertiajs",
+    "main": "server.js",
+    "scripts": {
+        "test": "tap test/**/*.test.js",
+        "start": "fastify-app run",
+        "dev": "(cd src/client && npm run build) & fastify-app run -l info -P -w"
+    },
+    "keywords": [
+        "fastify",
+        " node",
+        " inertia svelte"
+    ],
+    "author": "Ifeanyi Morah <mindwox@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+        "dotenv": "^8.2.0",
+        "fastify": "^3.7.0",
+        "fastify-autoload": "^1.2.2",
+        "fastify-express": "^0.3.2",
+        "fastify-plugin": "^1.6.1",
+        "fastify-static": "^3.3.0",
+        "inertia-node": "^1.1.2",
+        "is-docker": "^2.0.0",
+        "make-promises-safe": "^5.1.0",
+        "pino-colada": "^1.6.1",
+        "resolve-from": "^5.0.0",
+        "yargs-parser": "^18.1.2"
+    },
+    "devDependencies": {
+        "pre-commit": "^1.2.2",
+        "standard": "^14.3.3",
+        "tap": "^14.10.7"
+    }
+}
